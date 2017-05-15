@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.com.hadon.scanner.MainActivity">
+
+
+    <SurfaceView
+        android:id="@+id/mysurfaceview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onReady"
+            android:text="初始状态" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onScan"
+            android:text="扫描状态" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onSuccess"
+            android:text="扫描成功" />
+
+
+    </LinearLayout>
+
+    <cn.com.hadon.scanner.ScanView
+        android:id="@+id/scanView"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_centerInParent="true" />
+
+
+    <Button
+        android:id="@+id/btn_hiden_here"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/transparent"
+        android:text="藏在这里"
+        android:textColor="#fff" />
+
+</RelativeLayout>
