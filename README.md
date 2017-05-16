@@ -7,4 +7,4 @@ ScannerView的实现主要是利用canvas绘制圆弧通过更改角度值实现
 
  
 # 项目截图
-! [img](Scanner/screenshots/Screenshot_2017-05-15-16-05-41.png)
+![img](Scanner/screenshots/Screenshot_2017-05-15-16-05-41.png)
