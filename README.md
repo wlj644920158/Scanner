@@ -10,9 +10,10 @@ ScannerView的实现主要是利用canvas绘制圆弧通过更改角度值实现
 <div align=center><img width="320" height="600" src="https://github.com/wlj644920158/Scanner/blob/master/screenshots/Screenshot_2017-05-15-16-05-41.png"/></div>
 
 # 使用方式
-'''
+
 xml布局使用
-        <cn.com.hadon.scanner.ScanView
+'''
+  <cn.com.hadon.scanner.ScanView
         android:id="@+id/scanView"
         android:layout_width="240dp"
         android:layout_height="240dp"
@@ -28,7 +29,7 @@ xml布局使用
 '''
 控制语句
 '''
-    public void onReady(View view) {
+ public void onReady(View view) {
         scanView.setState(ScanView.STATE_READY);
     }
 
